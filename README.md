@@ -9,6 +9,9 @@ HomeController
 
 Templates->Home.html
 
+Ruleaza fara probleme?
+Intra pe http://localhost:8080/home
+
 ---------------
 
 <img width="1421" height="868" alt="image" src="https://github.com/user-attachments/assets/265d7eed-8a13-4acd-8ef3-47c762b8dafa" />
