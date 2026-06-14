@@ -31,6 +31,15 @@ Controllere
 
 Template -> prograamri ->formular, lista
 
+---------
+
+Resources-> Seed.txt
+
+config-> DataLoader 
+
+<img width="956" height="625" alt="image" src="https://github.com/user-attachments/assets/49679b65-6c0c-482f-8607-d69962276890" />
+
+
 **Domeniul:** Gestiunea programărilor într-o clinică
 
 **Descriere:** Se dorește dezvoltarea unei aplicații pentru gestionarea programărilor făcute de pacienți la medici. O programare poate avea stările: solicitată, confirmată, efectuată, anulată.
