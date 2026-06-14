@@ -21,32 +21,32 @@ public class ProgramariClinicaApplication {
         SpringApplication.run(ProgramariClinicaApplication.class, args);
     }
 
-    //afisare de test
-    @Bean
-    CommandLineRunner testData(
-            PacientRepository pacientRepository,
-            MedicRepository medicRepository,
-            ProgramareRepository programareRepository
-    ) {
-        return args -> {
-            Pacient pacient = new Pacient("Popescu Ion", "ion.popescu@gmail.com", "0711111111");
-            pacientRepository.save(pacient);
-
-            Medic medic = new Medic("Dr. Ionescu", "Cardiologie");
-            medicRepository.save(medic);
-
-            Programare programare = new Programare(
-                    LocalDateTime.now().plusDays(1),
-                    "Consultatie initiala",
-                    StareProgramare.SOLICITATA,
-                    pacient,
-                    medic
-            );
-            programareRepository.save(programare);
-
-            System.out.println("Pacienti: " + pacientRepository.findAll().size());
-            System.out.println("Medici: " + medicRepository.findAll().size());
-            System.out.println("Programari: " + programareRepository.findAll().size());
-        };
-    }
+//    //afisare de test
+//    @Bean
+//    CommandLineRunner testData(
+//            PacientRepository pacientRepository,
+//            MedicRepository medicRepository,
+//            ProgramareRepository programareRepository
+//    ) {
+//        return args -> {
+//            Pacient pacient = new Pacient("Popescu Ion", "ion.popescu@gmail.com", "0711111111");
+//            pacientRepository.save(pacient);
+//
+//            Medic medic = new Medic("Dr. Ionescu", "Cardiologie");
+//            medicRepository.save(medic);
+//
+//            Programare programare = new Programare(
+//                    LocalDateTime.now().plusDays(1),
+//                    "Consultatie initiala",
+//                    StareProgramare.SOLICITATA,
+//                    pacient,
+//                    medic
+//            );
+//            programareRepository.save(programare);
+//
+//            System.out.println("Pacienti: " + pacientRepository.findAll().size());
+//            System.out.println("Medici: " + medicRepository.findAll().size());
+//            System.out.println("Programari: " + programareRepository.findAll().size());
+//        };
+//    }
 }

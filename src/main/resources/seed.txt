@@ -1,0 +1,27 @@
+[MEDICI]
+Dr. Andrei Ionescu;Cardiologie
+Dr. Maria Popescu;Dermatologie
+Dr. Vlad Georgescu;Ortopedie
+Dr. Elena Marin;Pediatrie
+Dr. Radu Dumitru;Neurologie
+
+[PACIENTI]
+Ion Popescu;ion@gmail.com;0721111111
+Maria Ionescu;maria@gmail.com;0722222222
+Andrei Stoica;andrei@gmail.com;0723333333
+Elena Dumitrescu;elena@gmail.com;0724444444
+Vlad Marin;vlad@gmail.com;0725555555
+
+[PROGRAMARI]
+2026-06-16T09:00;Control cardiac;SOLICITATA;1;1
+2026-06-16T10:30;Consult dermatologic;CONFIRMATA;2;2
+2026-06-17T11:00;Durere genunchi;EFECTUATA;3;3
+2026-06-17T12:15;Control pediatric;ANULATA;4;4
+2026-06-18T14:00;Migrene frecvente;SOLICITATA;5;5
+
+[NOTIFICARI]
+Programarea a fost inregistrata.;2026-06-15T08:00;false;1;1
+Programarea a fost confirmata.;2026-06-15T08:30;true;2;2
+Programarea a fost finalizata.;2026-06-15T09:00;true;3;3
+Programarea a fost anulata.;2026-06-15T09:30;false;4;4
+Programarea este in asteptare.;2026-06-15T10:00;false;5;5

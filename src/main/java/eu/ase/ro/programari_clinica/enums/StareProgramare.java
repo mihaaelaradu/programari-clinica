@@ -4,5 +4,5 @@ public enum StareProgramare {
     SOLICITATA,
     CONFIRMATA,
     EFECTUATA,
-    ANULATA
+    ANULATA,
 }
