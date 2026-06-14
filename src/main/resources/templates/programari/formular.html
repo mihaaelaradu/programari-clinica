@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Programare noua</title>
+</head>
+<body>
+<h1>Adauga programare</h1>
+
+<form th:action="@{/programari/salveaza}" th:object="${programareRequest}" method="post">
+    <div>
+        <label>Id pacient:</label>
+        <input type="number" th:field="*{pacientId}" />
+    </div>
+
+    <div>
+        <label>Id medic:</label>
+        <input type="number" th:field="*{medicId}" />
+    </div>
+
+    <div>
+        <label>Data si ora:</label>
+        <input type="datetime-local" th:field="*{dataOra}" />
+    </div>
+
+    <div>
+        <label>Motiv:</label>
+        <input type="text" th:field="*{motiv}" />
+    </div>
+
+    <div>
+        <button type="submit">Salveaza</button>
+    </div>
+</form>
+
+<a th:href="@{/programari}">Inapoi la lista</a>
+
+</body>
+</html>
